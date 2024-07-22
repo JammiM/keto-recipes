@@ -1,0 +1,15 @@
+h3,
+h4 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0px !important;
+}
+ul li a {
+  font-family: "Roboto Condensed", sans-serif;
+}
