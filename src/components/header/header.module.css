@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  border: 1px solid green;
+  justify-content: space-evenly;
+}
+
+header div {
+  padding: 10px;
+  border: 1px solid blue;
+}

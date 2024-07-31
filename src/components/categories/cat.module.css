@@ -1,4 +1,4 @@
-h3,
+/* h3,
 h4 {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -12,4 +12,37 @@ ul {
 }
 ul li a {
   font-family: "Roboto Condensed", sans-serif;
-}
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+/* section.catsection {
+  padding: 20px !important;
+  margin: 15%;
+} */
+
+/* #root > div > section > h3 */
+/* #root > div > section {
+  padding: 40px !important;
+} */
+
+/* section.catsection h3 {
+  color: chocolate !important;
+  background-color: aquamarine !important;
+} */
+
+/* section.catsection {
+  background-color: aqua;
+} */
+
+/* #root > main > section > ul > li:nth-child(4) > a */
+
+/* #root main section h3 {
+  color: red;
+} */
+
+/* li {
+  list-style: none;
+} */
+/* 
+#root > main > section */

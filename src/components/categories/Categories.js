@@ -3,7 +3,7 @@ import categories from "./cat";
 
 function Categories() {
   return (
-    <section>
+    <section className="catsection">
       <h3>Categories</h3>
       <ul>
         {categories.map((single) => {

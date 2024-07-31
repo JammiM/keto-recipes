@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  border: 1px solid green;
+  justify-content: space-evenly;
+}
+
+footer div {
+  padding: 10px;
+  border: 1px solid blue;
+}
