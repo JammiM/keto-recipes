@@ -16,7 +16,6 @@ let styles = {
 function ListOfRecipes() {
   return (
     <div>
-      List Of Recipes
       <ul>
         {Recipes.map((single) => {
           const {
@@ -34,25 +33,27 @@ function ListOfRecipes() {
             category,
           } = single;
           return (
-            <li key={id} style={styles.singleRecipeItem}>
-              {/* // <li className="singleRecipeItem" key={id} style={{ width: "80%" }}> */}
-              <h4>{recipe}</h4>
-              <img
-                alt={recipe}
-                src={image}
-                style={{ height: "30%", width: "30%" }}
-              ></img>
-              <span>Difficulty : {difficulty}</span> |
-              <span>Serves: {serving} people</span> |
-              <span>Prep time : {prep_time_in_minutes} minutes</span> |
-              <span>Cook time : {cook_time_in_minutes} minutes</span> |
-              <span>Calories : {calories} </span> |
-              <span>Fat : {fat_in_grams} grams</span> |
-              <span>Carbs : {carbohydrates_in_grams} grams</span> |
-              <span>Protein : {protein_in_grams} grams</span> |
-              <span>
-                Category: {category.category} : {category.id}
-              </span>
+            <li
+              key={id}
+              class="p-1 max-w-md mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 m-10"
+            >
+              <div>
+                <img alt={recipe} src={image}></img>
+              </div>
+              <div>
+                <h4 class="text-xl font-medium text-black">{recipe}</h4>
+                <span>Difficulty : {difficulty}</span> |
+                <span>Serves: {serving} people</span> |
+                <span>Prep time : {prep_time_in_minutes} minutes</span> |
+                <span>Cook time : {cook_time_in_minutes} minutes</span> |
+                <span>Calories : {calories} </span> |
+                <span>Fat : {fat_in_grams} grams</span> |
+                <span>Carbs : {carbohydrates_in_grams} grams</span> |
+                <span>Protein : {protein_in_grams} grams</span> |
+                <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+                  {category.category}
+                </span>
+              </div>
             </li>
           );
         })}
