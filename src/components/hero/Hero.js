@@ -3,9 +3,8 @@ import React from "react";
 function Hero() {
   return (
     <section>
-      <p>Hero</p>
-
-      <p>
+      <p className="text-3xl">Hero</p>
+      <p className="font-bold">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida
         tellus vitae est egestas ornare cursus quis sem. Interdum et malesuada
         fames ac ante ipsum primis in faucibus. Nullam eget erat in dui eleifend
