@@ -39,9 +39,17 @@ function ListOfRecipes() {
                 <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
                   Prep time : {prep_time_in_minutes} minutes
                 </span>
-                <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
-                  Cook time : {cook_time_in_minutes} minutes
-                </span>
+
+                {cook_time_in_minutes == 0 ? (
+                  <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                    No Cook time
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                    Cook time : {cook_time_in_minutes} minutes
+                  </span>
+                )}
+
                 <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
                   Calories : {calories}
                 </span>
