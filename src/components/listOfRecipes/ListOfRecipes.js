@@ -1,18 +1,6 @@
 import React from "react";
 import Recipes from "./keto-recipes";
 
-let styles = {
-  singleRecipeItem: {
-    background: "#3399FF",
-    border: "1px solid blue",
-    padding: "10px",
-    width: "80%",
-    fontFamily: "Roboto Condensed, sans-serif",
-    margin: "0.5em",
-    listStyle: "none",
-  },
-};
-
 function ListOfRecipes() {
   return (
     <div>
@@ -42,8 +30,10 @@ function ListOfRecipes() {
               </div>
               <div>
                 <h4 class="text-xl font-medium text-black">{recipe}</h4>
-                <span>Difficulty : {difficulty}</span> |
-                <span>Serves: {serving} people</span> |
+                <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                  Difficulty : {difficulty}
+                </span>{" "}
+                |<span>Serves: {serving} people</span> |
                 <span>Prep time : {prep_time_in_minutes} minutes</span> |
                 <span>Cook time : {cook_time_in_minutes} minutes</span> |
                 <span>Calories : {calories} </span> |
