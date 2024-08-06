@@ -7,11 +7,13 @@ import footerStyles from "./components/footer/footer.module.css";
 import headerStyles from "./components/header/header.module.css";
 import Hero from "./components/hero/Hero";
 
+import ListOfRecipes from "./components/listOfRecipes/ListOfRecipes";
 function App() {
   return (
     <main>
       <Header className={headerStyles} />
       <Hero />
+      <ListOfRecipes />
       <Categories className={styles} />
       <Footer className={footerStyles} />
     </main>
