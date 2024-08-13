@@ -14,13 +14,14 @@ function App() {
       <Header className={headerStyles} />
       <main className="flex-1 flex">
         <div className="sidebar-1 p-4">
-          Placeholder Sidebar
           <Categories className={styles} />
         </div>
         <div className="content flex-1">
           <ListOfRecipes />
         </div>
-        <div className="sidebar-2  p-4">Placeholder Sidebar</div>
+        <div className="sidebar-2  p-4">
+          <Categories className={styles} />
+        </div>
       </main>
       <Footer className={footerStyles} />
     </div>
